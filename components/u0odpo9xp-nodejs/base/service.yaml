@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: u0odpo9xp-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: u0odpo9xp-nodejs 
+  name: u0odpo9xp-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: u0odpo9xp-nodejs 
